@@ -1,4 +1,5 @@
 SI364 Midterm Winter 2018
+
 Name: Frankie Antenucci
 
 My application uses the News API to allow the user to enter a topic they would like to receive article headlines about. The users of the application, the search terms entered, as well as the headlines returned are all entered into a database. The user can then view all of the users of the application, and the headlines that are returned in the corresponding routes. The user can also rate a news source of their choosing and that data is entered into the database, as well as displayed on the page. There is a "leave a review" section of the application where the users can leave their comments about their experience with the application and if they would use the application again.
@@ -17,6 +18,7 @@ http://localhost:5000/rate_sources -> rate_sources.html
 http://localhost:5000/comments -> leave_comments.html
 
 http://localhost:5000/view_comments -> comments.html
+
 
 
 THINGS I COMPLETED (ALL (bolded) - including extra 200 points)
