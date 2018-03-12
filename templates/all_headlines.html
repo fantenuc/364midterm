@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content1 %}
+
+<h1>Headlines of Topics Searched</h1>
+
+{% for h in headlines %}
+    <p>{{ h }}</p>
+{% endfor %}
+
+
+{% endblock %}

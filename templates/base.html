@@ -1,0 +1,30 @@
+{% block content1 %}
+
+<h1>Welcome to the News Application!</h1>
+
+<form action="{{ url_for('home') }}" method="POST">
+    {{ form.user.label() }}{{ form.user() }}<br>
+    {{ form.username.label() }}{{ form.username() }}<br>
+    {{ form.search_term.label() }}{{ form.search_term() }}<br>
+    {{ form.submit() }}
+    {{ form.hidden_tag() }}
+</form>
+
+
+{% for message in get_flashed_messages() %}
+    <strong>{{ message }}</strong>
+{% endfor %}
+
+
+
+{% endblock %}
+
+<p>------------</p>
+<h3>Navigation</h3>
+<ul>
+    <li><a href="{{ url_for('home')}}">Go to Homepage</a></li>
+    <li><a href="{{ url_for('all_names')}}">See All Users</a></li>
+    <li><a href="{{ url_for('all_headlines')}}">See All Headlines</a></li>
+    <li><a href="{{ url_for('rate_sources')}}">Rate a News Source Here</a></li>
+    <li><a href="{{ url_for('comments')}}">Please Leave us a Review</a></li>
+</ul>

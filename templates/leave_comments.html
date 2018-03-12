@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content1 %}
+
+<h1>Please leave a comment about your time using this application. We use these comments to help us improve our application!</h1>
+
+<form action="{{ url_for('view_comments') }}" method="GET">
+    {{ form.username.label() }}{{ form.username() }}<br>
+    {{ form.comment.label() }}{{ form.comment() }}<br>
+    {{ form.useful.label() }}{{ form.useful() }}<br>
+    {{ form.submit() }}
+    {{ form.hidden_tag() }}
+</form>
+
+{% endblock %}

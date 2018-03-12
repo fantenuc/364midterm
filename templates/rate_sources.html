@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content1 %}
+
+<h1>Rate News Sources Here!</h1>
+
+<form action="{{ url_for('rate_sources') }}" method="POST">
+    {{ form.username.label() }}{{ form.username() }}<br>
+    {{ form.source.label() }}{{ form.source() }}<br>
+    {{ form.source_rating.label() }}{{ form.source_rating() }}<br>
+    {{ form.submit() }}
+    {{ form.hidden_tag() }}
+</form>
+
+{% for rating in all_sources %}
+    <strong>{{ rating }}</strong><br>
+{% endfor %}
+
+{% if not all_sources %}
+    Enter a news source rating to see ratings by other users!
+{% endif %}
+
+<br><br>
+
+{% endblock %}
