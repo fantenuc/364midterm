@@ -5,11 +5,17 @@ My application uses the News API to allow the user to enter a topic they would l
 
 
 ALL ROUTES
+
 http://localhost:5000/ -> base.html
+
 http://localhost:5000/names -> name_example.html
+
 http://localhost:5000/headlines -> all_headlines.html
+
 http://localhost:5000/rate_sources -> rate_sources.html
+
 http://localhost:5000/comments -> leave_comments.html
+
 http://localhost:5000/view_comments -> comments.html
 
 
